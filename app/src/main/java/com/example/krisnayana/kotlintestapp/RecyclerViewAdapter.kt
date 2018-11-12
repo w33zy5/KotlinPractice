@@ -17,7 +17,7 @@ class RecyclerViewAdapter(private val context: Context, private val items: List<
             ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_list, parent, false))
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        Log.e("ERR", items[position].name)
+        Log.e("ERR", items[position].description)
         holder.bindItem(items[position], listener)
     }
 

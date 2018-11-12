@@ -17,12 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity" />
-        <activity
-            android:name=".TestHeaderActivity"
-            android:label="@string/title_activity_test_header"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
     </application>
 
 </manifest>

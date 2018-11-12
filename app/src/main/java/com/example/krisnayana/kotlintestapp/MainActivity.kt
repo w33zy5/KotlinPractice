@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         initData()
 
         val list = findViewById<RecyclerView>(R.id.club_list)
+        /*list.layoutManager = LinearLayoutManager(this)*/
         list.layoutManager = LinearLayoutManager(this)
         list.adapter = RecyclerViewAdapter(this, items){
             Log.e("error", it.name)
@@ -33,9 +34,6 @@ class MainActivity : AppCompatActivity() {
                     "detail" to deskripsi,
                     "gambar" to gambar
             )
-
-            val intent = Intent(ctx, SecondActivity::class.java)
-            //intent.putExtra("nam")
         }
     }
 
