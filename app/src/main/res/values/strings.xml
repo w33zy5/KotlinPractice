@@ -1,4 +1,38 @@
 <resources>
     <string name="app_name">Kotlin Test App</string>
+    <string-array name="club_name">
+        <item>Barcelona FC</item>
+        <item>Real Madrid FC</item>
+        <item>Bayern Munchen FC</item>
+        <item>Manchester City FC</item>
+        <item>Manchester United FC</item>
+        <item>Chelsea FC</item>
+        <item>AC Milan FC</item>
+        <item>Arsenal FC</item>
+    </string-array>
+
+    <string-array name="club_desc">
+        <item>Barcelona FC Description Test</item>
+        <item>Real Madrid FC Description Test</item>
+        <item>Bayern Munchen FC Description Test</item>
+        <item>Manchester City FC Description Test</item>
+        <item>Manchester United FC Description Test</item>
+        <item>Chelsea FC Description Test</item>
+        <item>AC Milan FC Description Test</item>
+        <item>Arsenal FC Description Test</item>
+    </string-array>
+
+    <array name="club_image">
+        <item>@drawable/img_barca</item>
+        <item>@drawable/img_madrid</item>
+        <item>@drawable/img_bayern</item>
+        <item>@drawable/img_city</item>
+        <item>@drawable/img_mu</item>
+        <item>@drawable/img_chelsea</item>
+        <item>@drawable/img_acm</item>
+        <item>@drawable/img_arsenal</item>
+    </array>
+    <string name="title_activity_test_header">TestHeaderActivity</string>
 
 </resources>
+

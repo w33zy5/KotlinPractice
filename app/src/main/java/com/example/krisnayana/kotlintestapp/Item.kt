@@ -1,4 +1,6 @@
 package com.example.krisnayana.kotlintestapp
 
-class Item {
-}
+data class Item (
+        val name: String? = null,
+        val image: Int? = 0,
+        val description: String? = null)
