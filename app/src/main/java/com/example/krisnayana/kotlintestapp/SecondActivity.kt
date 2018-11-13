@@ -3,6 +3,7 @@ package com.example.krisnayana.kotlintestapp
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
@@ -22,18 +23,18 @@ class SecondActivity : AppCompatActivity() {
         val name = getIntent().getStringExtra("nama")
 
         verticalLayout {
-            padding = dip(16)
-            tvName = textView {}.lparams(matchParent, wrapContent)
+            padding = dip(20)
+            tvImage = imageView{}.lparams(200, 200){gravity = Gravity.CENTER}
 
-            padding = dip(16)
-            tvImage = imageView{}.lparams(400, 400)
+            tvName = textView {
+                textSize = 18f
+            }.lparams(wrapContent, wrapContent){gravity = Gravity.CENTER; bottomMargin = 25}
 
-            padding = dip(16)
             tvDetail = textView {}.lparams(matchParent, wrapContent)
         }
 
-        Log.e("Test Name : ", name)
-        Log.e("Test Deskripsi : ", deskripsi)
+        /*Log.e("Test Name : ", name)
+        Log.e("Test Deskripsi : ", deskripsi)*/
         tvDetail?.text = deskripsi
         tvImage?.setImageResource(gambar)
         tvName?.text = name

@@ -20,10 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         initData()
 
-        val list = findViewById<RecyclerView>(R.id.club_list)
+        /*val list = findViewById<RecyclerView>(R.id.club_list)*/
         /*list.layoutManager = LinearLayoutManager(this)*/
-        list.layoutManager = LinearLayoutManager(this)
-        list.adapter = RecyclerViewAdapter(this, items){
+        club_list.layoutManager = LinearLayoutManager(this)
+        club_list.adapter = RecyclerViewAdapter(this, items){
             Log.e("error", it.name)
 
             val gambar = it.image
